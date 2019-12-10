@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { getshippingOption, getShippingRate } from "../core/utils";
+import Address from "./Address";
 
 const ShippingLabel = props => {
   let [shipInfo] = useState(props.info);
@@ -17,21 +18,8 @@ const ShippingLabel = props => {
           Cost{" "}
         </span>
       </div>
-      <div className="from">
-        <span className="block">{shipInfo.from.name}</span>
-        <span className="block">{shipInfo.from.street}</span>
-        <span className="block">
-          {shipInfo.from.city}, {shipInfo.from.state} {shipInfo.from.zip}{" "}
-        </span>
-      </div>
-      <div className="to">
-        <span className="block">{shipInfo.to.name}</span>
-        <span className="block">{shipInfo.to.street}</span>
-        <span className="block">
-          {shipInfo.to.city}, {shipInfo.to.state} {shipInfo.to.zip}
-        </span>
-      </div>
-      <div> </div>
+      <Address shipInfo={shipInfo.from} label="from" />
+      <Address shipInfo={shipInfo.to} label="to" />
     </section>
   );
 };
