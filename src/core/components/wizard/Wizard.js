@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import PropTypes from "prop-types";
 import Navigation from "../Navigation";
 import ProgressBar from "../ProgressBar";
@@ -23,6 +23,7 @@ export default class Wizard extends React.Component {
     this.handleNested = this.handleNested.bind(this);
     this.handleFilter = this.handleFilter.bind(this);
   }
+  useState
 
   checkNavState(next) {
     if (next < 2) {
