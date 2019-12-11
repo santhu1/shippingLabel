@@ -1,5 +1,4 @@
 # shippingLabel
-# Multi Step form and SHIPPING LABEL MAKER APP
 
 ## Entry point index.js in src directory
 
