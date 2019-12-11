@@ -1,13 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {stepMapping} from '../../core/constants';
+import React from "react";
+import PropTypes from "prop-types";
+import { stepMapping } from "../../core/constants";
 
 export default class StepTwo extends React.Component {
   render() {
-    const { onAction, wizardContext: {to} } = this.props;
+    const {
+      onAction,
+      wizardContext: { to }
+    } = this.props;
     return (
-      <div>
-        <h6>Enter to Address</h6>
+      <div className="container">
+        <div className="row">
+          <h6>Enter to Address </h6>
+        </div>
         <div className="row">
           <div className="six columns">
             <label>Name</label>

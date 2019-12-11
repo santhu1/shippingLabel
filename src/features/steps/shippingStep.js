@@ -1,14 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {stepMapping, shippingOptionObj} from '../../core/constants';
-
+import React from "react";
+import PropTypes from "prop-types";
+import { stepMapping, shippingOptionObj } from "../../core/constants";
 
 export default class StepFour extends React.Component {
   render() {
-    const { onAction, wizardContext: {shippingOption} } = this.props;
+    const {
+      onAction,
+      wizardContext: { shippingOption }
+    } = this.props;
     return (
-      <div>
-        <h6>Enter shipping option</h6>
+      <div className="container">
+        <div className="row">
+          <h6>Enter shipping option.</h6>
+        </div>
+
         <div className="row">
           <div className="six columns">
             <label>Shipping</label>
@@ -18,9 +23,7 @@ export default class StepFour extends React.Component {
               data-id="shippingOption"
               data-step={stepMapping.shipping}
             >
-              <option value={shippingOptionObj.ground}>
-                Ground
-              </option>
+              <option value={shippingOptionObj.ground}>Ground</option>
               <option value={shippingOptionObj.priority}>Express</option>
             </select>
           </div>

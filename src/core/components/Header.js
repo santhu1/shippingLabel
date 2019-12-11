@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = () => {
-  return <h1> Shipping Label Maker </h1>;
+  return <h3> Shipping Label Maker </h3>;
 };
 
 export default Header;

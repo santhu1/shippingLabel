@@ -2,14 +2,14 @@ import React from "react";
 
 const Address = props => {
   return (
-    <div>
+    <div className="container">
       <label> {props.label} </label>
       <div className={props.label}>
-        <span className="block">{props.shipInfo.name}</span>
+        <div className="block">{props.shipInfo.name}</div>
         <span className="block">{props.shipInfo.street}</span>
-        <span className="block">
+        <div className="block">
           {props.shipInfo.city}, {props.shipInfo.state} {props.shipInfo.zip}{" "}
-        </span>
+        </div>
       </div>
     </div>
   );
