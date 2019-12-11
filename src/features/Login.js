@@ -6,8 +6,8 @@ export default class Login extends React.Component {
   constructor() {
     super();
     this.state = {
-      userName: "admin",
-      password: "password"
+      userName: "",
+      password: ""
     };
     this.onChangeHandle = this.onChangeHandle.bind(this);
   }

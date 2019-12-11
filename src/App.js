@@ -12,11 +12,11 @@ const App = () => {
       email.toLowerCase() === "admin" && password.toLowerCase() === "password";
     onLogin(value);
     onSuccessFullLogin(value);
+    console.log(successFullLogin);
   };
 
   return (
     <div className="container">
-      <div className="h4"> Login in </div>
       {successFullLogin !== null && (
         <AlertMessage
           successful={successFullLogin}

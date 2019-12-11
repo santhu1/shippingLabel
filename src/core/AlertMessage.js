@@ -7,7 +7,7 @@ const AlertMessage = props => {
 
   return show ? (
     <Alert
-      show={props.successful}
+      show="true"
       variant={props.successful ? "success" : "danger"}
       onClose={() => setShow(false)}
       dismissible
